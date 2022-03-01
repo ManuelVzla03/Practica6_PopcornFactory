@@ -13,13 +13,15 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class catalogo : AppCompatActivity() {
-    var adapter: PeliculaAdapter? = null
     var peliculas = ArrayList<Pelicula>()
-        val gridview: GridView = findViewById(R.id.gridview)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_catalogo)
+
+        var adapter: PeliculaAdapter? = null
+        val gridview: GridView = findViewById(R.id.gridview)
 
         cargarPeliculas()
 
